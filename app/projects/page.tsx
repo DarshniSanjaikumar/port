@@ -215,7 +215,7 @@ export default function ProjectsPage() {
                 ? 'bg-blue-600 text-white font-medium' 
                 : 'bg-gray-100 text-gray-600 hover:bg-gray-200'
               }`}
-              onClick={() => setActiveProject(key)}
+              onClick={() => setActiveProject(key as keyof typeof projectDetails)}
             >
               {projectDetails[key as keyof typeof projectDetails].title}
             </button>
