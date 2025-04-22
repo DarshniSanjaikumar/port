@@ -23,7 +23,7 @@ export default function ProjectsPage() {
   };
   
   // State for active project
-  const [activeProject, setActiveProject] = useState('startup-radar');
+  const [activeProject, setActiveProject] = useState<keyof typeof projectDetails>('startup-radar');
   
   // Project details enhanced with resume information
   const projectDetails = {
