@@ -4,7 +4,7 @@ import React, { useState, useEffect, useRef } from 'react';
 
 export default function ProjectsPage() {
   const counterSectionRef = useRef(null);
-  const projectsRef = useRef(null);
+  const projectsRef = useRef<HTMLDivElement>(null);
   
   // State for animated counters
   const [counters, setCounters] = useState({
