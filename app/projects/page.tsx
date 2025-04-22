@@ -217,7 +217,7 @@ export default function ProjectsPage() {
               }`}
               onClick={() => setActiveProject(key)}
             >
-              {projectDetails[key].title}
+              {projectDetails[key as keyof typeof projectDetails].title}
             </button>
           ))}
         </div>
